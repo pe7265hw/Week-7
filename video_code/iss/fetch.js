@@ -34,7 +34,7 @@ iss(maxFailedAttempts) //call function one time to start
 function iss(attempts){
 
     if(attempts <=0){
-        alert('Attempted to contact ISS server, failed after three attempts.') //if more than 3 failed attempts error alert shown
+        alert('Attempted to contact ISS server, or some other error, possibly related to a bad icon link. Failed after three attempts.') //if more than 3 failed attempts error alert shown
         return;
     }
     fetch(url).then((res) => { //fetches url variable then returns json from url
